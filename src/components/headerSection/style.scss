@@ -1,0 +1,41 @@
+.HeaderBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    .postWork{
+        background-image: url(https://i.pinimg.com/564x/69/81/d7/6981d7859842d94b7f7f3260650737d3.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 400px;
+        .postWorkButton{
+            border-radius: 3px;
+            border: 1px solid black;
+            padding: 8px 8px;
+            width: 150px;
+            height: 38px;
+        }
+    }
+    .getWork{
+        background-image: url(https://i.pinimg.com/564x/ec/91/3b/ec913bd5932cc4271bae7d9470111d13.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 400px;
+        .getWorkButton{
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 8px 8px;
+            width:150px;
+            height: 38px;
+        }
+    }
+}
