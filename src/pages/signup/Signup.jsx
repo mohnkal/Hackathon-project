@@ -10,10 +10,7 @@ const Signup = () => {
           <p className="description">
             It looks like you're new here. We need a bit more info to create
             your new account. Already have an 
-            account?{" "}
-            <a href="/login" className="blueText">
-              Login to get started.
-            </a>
+            account? <a href="/login" className="blueText">Login to get started.</a>
           </p>
         </div>
         <div className="emailBox">
@@ -28,11 +25,9 @@ const Signup = () => {
           />
         </div>
         <div className="nameBox">
+          <div className="fName">
           <label className="labelEmail" htmlFor="">
             First name<span className="redstar">*</span>
-          </label>
-          <label className="labelLastName" htmlFor="">
-            Last name<span className="redstar">*</span>
           </label>
           <br />
           <input
@@ -40,11 +35,18 @@ const Signup = () => {
             type="text"
             placeholder="Enter First name"
           />
+          </div>
+          <div className="Lname">
+          <label className="labelLastName" htmlFor="">
+            Last name<span className="redstar">*</span>
+          </label>
+          <br />
           <input
             className="lastNameInputBox"
             type="text"
             placeholder="Enter Last name"
           />
+          </div>
         </div>
         <div className="passBox">
           <label className="labelPass" htmlFor="">
