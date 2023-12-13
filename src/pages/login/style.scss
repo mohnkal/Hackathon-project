@@ -1,0 +1,72 @@
+.redstar{
+    color: red;
+}
+.bluetext{
+    color:blue;
+}
+.email{
+    height: 35px;
+    width: 690px;
+    border-radius:3px;
+    border: 1px solid black;
+}
+.password{
+    height: 35px;
+    width: 690px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.loginbtn{
+    width:250px;
+    height: 35px;
+}
+.Login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: #F0F1F5;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(49deg, rgba(0,151,255,1) 14%, rgba(115,0,255,1) 79%);
+}
+
+.labelEmail{
+    text-align: left;
+    width: 690px;
+    padding: 0;
+    margin: 0px;
+}
+.labelPass{
+    text-align: left;
+    width: 690px;
+    padding: 0;
+    margin-top: 20px;
+}
+.passtext{
+    margin-top: 25px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    background-color: #4286F5;
+    height: 35px;
+    width: 250px;
+    justify-content: center;
+}
+.borderline{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    height: 500px;
+    width: 900px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+.text{
+    width: 690px;
+}
