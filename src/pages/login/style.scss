@@ -1,3 +1,4 @@
+@import "../../../mixins.scss"; 
 .redstar{
     color: red;
 }
@@ -70,3 +71,163 @@
 .text{
     width: 690px;
 }
+h1{
+    @include ssm{
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 900px) {
+.borderline{
+    height: 500px;
+    width: 800px;
+}
+}
+@media screen and (max-width: 850px) {
+    .borderline{
+        height: 500px;
+        width: 750px;
+    }
+    .email{
+        height: 35px;
+        width: 600px;
+        border-radius:3px;
+        border: 1px solid black;
+    }
+    .password{
+        height: 35px;
+        width: 600px;
+        border-radius: 3px;
+        border: 1px solid black;
+        .labelEmail{
+            text-align: left;
+            width: 600px;
+            padding: 0;
+            margin: 0px;
+        }
+        .labelPass{
+            text-align: left;
+            width: 600px;
+            padding: 0;
+            margin-top: 20px;
+        }
+    }
+    }
+    @media screen and (max-width: 800px) {
+        .borderline{
+          
+            width: 700px;
+        }
+        .email{
+            width: 550px;
+            
+        }
+        .password{ 
+            width: 550px;
+        }
+        .labelEmail{
+                width: 550px;
+            }
+            .labelPass{
+                width: 550px;
+            }
+            .text{
+                width: 550px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .borderline{
+          
+            width: 650px;
+        }
+        .email{
+            width: 500px;
+            
+        }
+        .password{ 
+            width: 500px;
+        }
+        .labelEmail{
+                width: 500px;
+            }
+            .labelPass{
+                width: 500px;
+            }
+            .text{
+                width: 500px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .borderline{
+          
+            width: 500px;
+        }
+        .email{
+            width: 400px;
+            
+        }
+        .password{ 
+            width: 400px;
+        }
+        .labelEmail{
+                width: 400px;
+            }
+            .labelPass{
+                width: 400px;
+            }
+            .text{
+                width: 400px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .borderline{
+          
+            width: 400px;
+        }
+        .email{
+            width: 300px;
+            
+        }
+        .password{ 
+            width: 300px;
+        }
+        .labelEmail{
+                width: 300px;
+            }
+            .labelPass{
+                width: 300px;
+            }
+            .text{
+                width: 300px;
+        }
+    }
+    @media screen and (max-width: 404px) {
+        .borderline{
+          
+            width: 275px;
+        }
+        .email{
+            width: 200px;
+            
+        }
+        .password{ 
+            width: 200px;
+        }
+        .labelEmail{
+                width: 200px;
+            }
+            .labelPass{
+                width: 200px;
+            }
+            .text{
+                width: 200px;
+        }
+        .loginbtn{
+            width:150px;
+        }
+        .icon{
+            width: 150px;
+        }
+    }
+        
+        
+        
