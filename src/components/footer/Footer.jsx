@@ -1,16 +1,6 @@
-import React from "react";
-import "./style.scss";
-import pinterest from "../../assets/pinterest.png";
-import instagram from "../../assets/instagram.png";
-import twitter from "../../assets/twitter.png";
-import facebook from "../../assets/linkedin.png";
-import { useNavigate } from "react-router-dom";
+import React from 'react'
 
-export default function Footer() {
-  const navigate = useNavigate();
-  const onAboutUsClicked = () => {
-    navigate('/About_Us');
-  }
+const Footer = () => {
   return (
     <>
     {/* <ContentWrapper> */}
