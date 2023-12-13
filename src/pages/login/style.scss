@@ -20,6 +20,12 @@
 .loginbtn{
     width:250px;
     height: 35px;
+    background: linear-gradient(
+      49deg,
+      rgba(0, 151, 255, 1) 14%,
+      rgba(115, 0, 255, 1) 79%
+    );
+    color: white;
 }
 .Login {
     display: flex;
@@ -55,6 +61,7 @@
     height: 35px;
     width: 250px;
     justify-content: center;
+    color: white;
 }
 .borderline{
     display: flex;
