@@ -10,10 +10,10 @@ function App() {
   return (
     <BrowserRouter>
         <Navbar />
-        <Routes>
+        {/* <Routes>
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
-        </Routes>
+        </Routes> */}
         <Footer />
     </BrowserRouter>
   );
