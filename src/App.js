@@ -10,19 +10,12 @@ import LandingPage from './pages/landingPage/LandingPage';
 function App() {
   return (
     <BrowserRouter>
-<<<<<<< HEAD
         {/* <Navbar /> */}
         <Routes>
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/jobs" element={<JobListing/>} />
-        </Routes>
-=======
-        <Navbar />
-        <Routes>
           <Route path="/" element={<LandingPage/>} />
-          <Route path="/signup" element={<Signup/>} />
-          <Route path="/login" element={<Login/>} />
         </Routes>
         <Footer />
     </BrowserRouter>

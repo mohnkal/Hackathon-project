@@ -1,5 +1,9 @@
 import React from 'react'
-
+import './style.scss'
+import { FaInstagram } from "react-icons/fa6";
+import { FaPinterest } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
@@ -12,7 +16,7 @@ const Footer = () => {
           <p>
             <b>Company Information</b>
           </p>
-          <a href="About_Us" onClick={onAboutUsClicked}>
+          <a href="About_Us" >
             <p id="con1">Web Developer</p>
           </a>
           <a href="Careers">
@@ -39,22 +43,22 @@ const Footer = () => {
               href="https://in.pinterest.com/mohnishkalaimani/"
               
             >
-              <img id="pinterest" src={pinterest} alt="pinterest" width="50" />
+              <FaPinterest/>
             </a>
             <a
               href="https://www.instagram.com/mohnish_kalaimani/"
               
             >
-              <img id="instagram" src={instagram} alt="Instagram" width="50" />
+              <FaInstagram/>
             </a>
             <a href="https://twitter.com/MohnishKalaima1" >
-              <img id="twitter" src={twitter} alt="twitter" width="50" />
+              <FaXTwitter/>
             </a>
             <a
               href="https://www.facebook.com/mohnish.kalaimani.3"
               
             >
-              <img id="facebook" src={facebook} alt="facebook" width="50" />
+              <FaFacebook/>
             </a>
           </div>
         </div>
@@ -62,3 +66,4 @@ const Footer = () => {
     </>
   );
 }
+export default Footer;

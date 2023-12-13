@@ -34,8 +34,7 @@ const Signup = () => {
           <p className="description">
             It looks like you're new here. We need a bit more info to create
             your new account. Already have an 
-            account? <a href="/login" className="blueText">Login to get started.</a>
-            your new account. Already have an account?{" "}
+            account?
             <a href="/login" className="blueText">
               Login to get started.
             </a>
