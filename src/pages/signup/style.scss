@@ -4,17 +4,15 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  .backgroundImage img{
-    width: 100vw;
-    height: 100vh;
-  }
+  background: linear-gradient(49deg, rgba(0,151,255,1) 14%, rgba(115,0,255,1) 79%);
   .borderLine {
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 450px;
-    width: 800px;
+    height: 500px;
+    width: 900px;
     border: 1px solid black;
     border-radius: 12px;
     h1 {
@@ -24,6 +22,7 @@
       margin: 10;
     }
     .textDetailsDiv {
+        width: 690px;
       .description {
         .blueText {
           color: blue;
