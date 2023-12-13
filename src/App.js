@@ -6,18 +6,22 @@ import Login from './pages/login/Login';
 import JobListing from './pages/joblisting/JobListing';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './pages/landingPage/LandingPage';
+import Workercard from './pages/workercard/Workercard';
 
 function App() {
   return (
     <BrowserRouter>
+    
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/jobs" element={<JobListing/>} />
+          <Route path="/userdashboard" element={<Workercard/>} />
+
         </Routes>
-        <Footer />
+        <Footer /> 
     </BrowserRouter>
   );
 }
