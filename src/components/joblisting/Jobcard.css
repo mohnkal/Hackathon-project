@@ -1,5 +1,44 @@
 .card_container{
     display:flex;
+    justify-content: center;
+    align-items: start;
     flex-direction: column;
-    
+    width: 900px;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 15px;
+}
+.card_title{
+    font-size: 22px;
+}
+.card_budget{
+    color: red;
+    font-size: 18px;
+}
+.seeMoreButton button{
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+     width: 100px;
+     height: 30px;
+     border-radius: 3px;
+     border: 1px solid black;
+     background: linear-gradient(
+        49deg,
+        rgba(0, 151, 255, 1) 14%,
+        rgba(115, 0, 255, 1) 79%
+      );
+}
+.seeMoreButton button:hover{
+    cursor: pointer;
+    margin-top: 10px;
+     width: 100px;
+     height: 30px;
+     border-radius: 3px;
+     border: 1px solid black;
+     background: linear-gradient(
+        49deg,
+        rgb(0, 116, 193) 14%,
+        rgb(92, 0, 205) 79%
+      );
 }

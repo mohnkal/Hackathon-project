@@ -1,16 +1,15 @@
 import React from 'react'
 import './style.scss'
-import { FaSearch } from "react-icons/fa";
-import { CiSquarePlus } from "react-icons/ci";
+import { CiSearch, CiSquarePlus } from "react-icons/ci";
 
 const HeaderSection = () => {
   return (
     <div className='HeaderBanner'>
       <div className='postWork'>
-        <button className='postWorkButton'><CiSquarePlus /> Post Job</button>
+        <button className='postWorkButton'><CiSquarePlus/> Post Job</button>
       </div>
       <div className='getWork'>
-        <button className='getWorkButton'><FaSearch /> Search job</button>
+        <button className='getWorkButton'><CiSearch />Search job</button>
       </div>
     </div>
   )
