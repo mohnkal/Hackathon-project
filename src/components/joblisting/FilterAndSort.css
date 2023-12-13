@@ -3,4 +3,12 @@
     flex-direction:column;
 
 }
-
+.min{
+    width: 150px;
+}
+.max{
+    width: 150px;
+}
+.submit{
+    width: 150px;
+}

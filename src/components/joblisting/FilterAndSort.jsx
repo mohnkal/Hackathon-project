@@ -26,13 +26,13 @@ export default function FilterAndSort() {
                 {/* Fixed Price Min Input */}
                 <div className='fixed_price_min_input'>
                     <p>Min</p>
-                    <input type='number'></input>
+                    <input type='number' className='min'></input>
                 </div>
 
                 {/* Fixed Price Max Input */}
                 <div className='fixed_price_max_input'>
                     <p>Max</p>
-                    <input type='number'></input>
+                    <input type='number' className='max'></input>
                 </div>
 
             {/* Filter by time of completion */}
@@ -41,7 +41,7 @@ export default function FilterAndSort() {
 
             {/* Submit Button */}
             <div>
-                <input type="submit"></input>
+                <input type="submit" className='submit'></input>
             </div>
             
 
