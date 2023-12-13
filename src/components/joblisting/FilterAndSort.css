@@ -3,4 +3,19 @@
     flex-direction:column;
 
 }
-
+.fixed_price_min_input{
+    margin-top: 10px;
+}
+.min{
+    width: 150px;
+    margin-bottom: 10px;
+}
+.max{
+    width: 150px;
+    margin-bottom: 10px;
+}
+.submit{
+    width: 150px;
+    align-items: center;
+    border-radius: 5px;
+}
