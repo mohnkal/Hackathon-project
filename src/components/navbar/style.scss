@@ -1,102 +1,87 @@
-// App.scss
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  // Navbar styles
-  .navbar {
-    background-color: #333;
-    padding: 15px;
-    text-align: center;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-  
-    .hamburger {
-      font-size: 1.5em;
-      cursor: pointer;
-      background: none;
-      border: none;
-      color: white;
-    }
-  }
-  
-  // Sidebar styles
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-  
-    a {
-      padding: 15px;
-      text-decoration: none;
-      font-size: 1.2em;
-      color: white;
-      display: block;
-      transition: 0.3s;
-  
-      &:hover {
-        color: #f1f1f1;
-      }
-    }
-  
-    .closebtn {
-      padding: 15px;
-      text-decoration: none;
-      font-size: 1.2em;
-      color: white;
-      cursor: pointer;
-      background: none;
-      border: none;
-    }
-  }
-  
-  // Responsive styles
-  @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {
-      display: none;
-    }
-  
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-  
-    .navbar.responsive {
-      position: relative;
-  
-      a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-  
-      a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-  
-      .sidebar {
-        width: 100%;
-      }
-    }
-  }
-  
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
