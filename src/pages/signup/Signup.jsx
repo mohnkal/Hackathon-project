@@ -12,7 +12,6 @@ const Signup = () => {
             your new account. Already have an 
             account?{" "}
             <a href="/login" className="blueText">
-              {" "}
               Login to get started.
             </a>
           </p>
@@ -39,7 +38,7 @@ const Signup = () => {
           <input
             className="nameInputBox"
             type="text"
-            placeholder="Please enter email here"
+            placeholder="Enter First name"
           />
           <input
             className="lastNameInputBox"
@@ -59,7 +58,7 @@ const Signup = () => {
           />
         </div>
         <div className="button">
-          <button className="submitButton">Submit</button>
+          <button className="submitButton">Sign Up</button>
         </div>
       </div>
     </div>
