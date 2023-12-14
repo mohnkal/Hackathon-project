@@ -7,6 +7,7 @@ import JobListing from './pages/joblisting/JobListing';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './pages/landingPage/LandingPage';
 import Workercard from './pages/workercard/Workercard';
+import CreateJob from './pages/createJob/CreateJob';
 
 function App() {
   return (
@@ -19,9 +20,7 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/jobs" element={<JobListing/>} />
           <Route path="/userdashboard" element={<Workercard/>} />
-
-          <Route path="/jobs" element={<JobListing/>} />
-          <Route path="/createjob" element={<JobListing/>} />
+          <Route path="/createjob" element={<CreateJob/>} />
         </Routes>
         <Footer /> 
     </BrowserRouter>

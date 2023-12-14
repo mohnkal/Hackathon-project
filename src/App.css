@@ -4,3 +4,6 @@
 a{
   text-decoration: none;
 }
+input[type="number"] {
+  -moz-appearance: textfield;
+}
